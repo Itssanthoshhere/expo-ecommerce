@@ -1,0 +1,11 @@
+// Backend
+npm init -y
+
+npm i express dotenv
+
+// Admin
+
+npm create vite@latest .
+
+// Mobile
+npx create-expo-app@latest .
