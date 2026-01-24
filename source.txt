@@ -9,9 +9,13 @@ npm i mongoose@8.19.3
 
 npm i cloudinary@2.8.0
 
+npm install inngest
+
 // Admin
 
 npm create vite@latest .
+
+npm install @clerk/clerk-react
 
 // Mobile
 npx create-expo-app@latest .
