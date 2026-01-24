@@ -1,7 +1,13 @@
 // Backend
 npm init -y
 
-npm i express dotenv
+npm i express@5.1.0 dotenv@17.2.3
+
+npm install @clerk/express
+
+npm i mongoose@8.19.3 
+
+npm i cloudinary@2.8.0
 
 // Admin
 
@@ -9,3 +15,6 @@ npm create vite@latest .
 
 // Mobile
 npx create-expo-app@latest .
+
+// Expo-Ecommerce
+npm init -y
