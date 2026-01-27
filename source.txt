@@ -21,6 +21,18 @@ npm create vite@latest .
 
 npm install @clerk/clerk-react
 
+npm install tailwindcss @tailwindcss/vite
+
+npm i react-router
+
+npm i @tanstack/react-query
+
+npm i axios
+
+npm i lucide-react
+
+npm i -D daisyui@latest
+
 // Mobile
 npx create-expo-app@latest .
 
