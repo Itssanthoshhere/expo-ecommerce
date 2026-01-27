@@ -7,7 +7,7 @@ const router = Router();
 // Create a new order
 router.post("/", protectRoute, createOrder);
 
-// Get orders for the logged-in userF
+// Get orders for the logged-in user
 router.get("/", protectRoute, getUserOrders);
 
 export default router;
