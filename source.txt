@@ -13,6 +13,8 @@ npm install inngest
 
 npm i multer
 
+npm i cors
+
 // Admin
 
 npm create vite@latest .
