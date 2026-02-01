@@ -265,6 +265,7 @@ function ProductsPage() {
                   <option value="Electronics">Electronics</option>
                   <option value="Accessories">Accessories</option>
                   <option value="Fashion">Fashion</option>
+                  <option value="Books">Books</option>
                   <option value="Sports">Sports</option>
                 </select>
               </div>
