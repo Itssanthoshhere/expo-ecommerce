@@ -33,6 +33,8 @@ npm i lucide-react
 
 npm i -D daisyui@latest
 
+npm install --save @sentry/react
+
 // Mobile
 npx create-expo-app@latest .
 
