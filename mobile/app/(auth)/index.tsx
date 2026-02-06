@@ -59,7 +59,7 @@ const AuthScreen = () => {
           }}
         >
           {loadingStrategy === "oauth_apple" ? (
-            <ActivityIndicator size={"small"} color={"#4285f4"} />
+            <ActivityIndicator size={"small"} color={"#000"} />
           ) : (
             <View className="flex-row items-center justify-center">
               <Image
