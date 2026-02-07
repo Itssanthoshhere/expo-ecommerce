@@ -86,3 +86,5 @@ const AuthScreen = () => {
     </View>
   );
 };
+
+export default AuthScreen;
