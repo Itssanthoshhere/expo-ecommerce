@@ -11,8 +11,8 @@ import { tokenCache } from "@clerk/clerk-expo/token-cache";
 import * as Sentry from "@sentry/react-native";
 
 Sentry.init({
-  dsn: "https://118f4fa242a56265e29b7da8f71a87b8@o4509791949684736.ingest.us.sentry.io/4510852233953280",
-
+  dsn: process.env.EXPO_PUBLIC_SENTRY_DSN,
+  
   // Adds more context data to events (IP address, cookies, user, etc.)
   // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
   sendDefaultPii: true,
