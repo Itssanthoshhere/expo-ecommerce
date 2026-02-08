@@ -11,7 +11,12 @@ import {
   TouchableOpacity,
   TextInput,
   Image,
+  // Button,
 } from "react-native";
+
+// import * as Sentry from "@sentry/react-native";
+
+// TODO: in the payment section use sentry logs to track payment errors - workflow
 
 const CATEGORIES = [
   { name: "All", icon: "grid-outline" as const },
@@ -122,6 +127,15 @@ const ShopScreen = () => {
             })}
           </ScrollView>
         </View>
+
+        {/* TEST BUTTON - Triggers Sentry error tracking to test error monitoring */}
+        {/* <Button
+          title="Try!"
+          onPress={() => {
+            // Capture a test error and send it to Sentry for monitoring and debugging
+            Sentry.captureException(new Error("First error"));
+          }}
+        /> */}
 
         <View className="px-6 mb-6">
           <View className="flex-row items-center justify-between mb-4">
