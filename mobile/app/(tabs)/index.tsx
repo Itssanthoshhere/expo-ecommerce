@@ -147,7 +147,7 @@ const ShopScreen = () => {
             </Text>
           </View>
 
-          {/* PRODUCTS GRIDå */}
+          {/* PRODUCTS GRID */}
           <ProductsGrid
             products={filteredProducts}
             isLoading={isLoading}
