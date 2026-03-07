@@ -15,6 +15,10 @@ npm i multer
 
 npm i cors
 
+npm i stripe@19.3.1
+
+npm i @stripe/stripe-react-native@0.57.0
+
 // Admin
 
 npm create vite@latest .
@@ -54,7 +58,10 @@ npx expo install expo-blur
 
 npm i axios
 
- npm install react-native-reanimated@~4.1.1
+npm install react-native-reanimated@~4.1.
+ 
+npm i @stripe/stripe-react-native@0.57.0
+
 
 // TO RUN EXPO 
 npx expo start
