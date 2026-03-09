@@ -1,3 +1,4 @@
+import LoadingState from "@/components/LoadingState";
 import RatingModal from "@/components/RatingModal";
 import SafeScreen from "@/components/SafeScreen";
 import { useOrders } from "@/hooks/useOrders";
@@ -88,7 +89,7 @@ function OrdersScreen() {
       </View>
 
       {isLoading ? (
-        <LoadingUI />
+        <LoadingState message="Loading orders..." />
       ) : isError ? (
         <ErrorUI />
       ) : !orders || orders.length === 0 ? (
@@ -222,14 +223,14 @@ function OrdersScreen() {
 }
 export default OrdersScreen;
 
-function LoadingUI() {
-  return (
-    <View className="items-center justify-center flex-1">
-      <ActivityIndicator size="large" color="#00D9FF" />
-      <Text className="mt-4 text-text-secondary">Loading orders...</Text>
-    </View>
-  );
-}
+// function LoadingUI() {
+//   return (
+//     <View className="items-center justify-center flex-1">
+//       <ActivityIndicator size="large" color="#00D9FF" />
+//       <Text className="mt-4 text-text-secondary">Loading orders...</Text>
+//     </View>
+//   );
+// }
 
 function ErrorUI() {
   return (

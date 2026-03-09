@@ -19,6 +19,7 @@ import OrderSummary from "@/components/OrderSummary";
 import AddressSelectionModal from "@/components/AddressSelectionModal";
 
 import * as Sentry from "@sentry/react-native";
+import LoadingState from "@/components/LoadingState";
 
 const CartScreen = () => {
   const api = useApi();
@@ -167,7 +168,7 @@ const CartScreen = () => {
     }
   };
 
-  if (isLoading) return <LoadingUI />;
+  if (isLoading) return <LoadingState message="Loading cart..." />;
   if (isError) return <ErrorUI />;
   if (cartItems.length === 0) return <EmptyUI />;
 
@@ -342,14 +343,14 @@ const CartScreen = () => {
 
 export default CartScreen;
 
-function LoadingUI() {
-  return (
-    <View className="items-center justify-center flex-1 bg-background">
-      <ActivityIndicator size="large" color="#00D9FF" />
-      <Text className="mt-4 text-text-secondary">Loading cart...</Text>
-    </View>
-  );
-}
+// function LoadingUI() {
+//   return (
+//     <View className="items-center justify-center flex-1 bg-background">
+//       <ActivityIndicator size="large" color="#00D9FF" />
+//       <Text className="mt-4 text-text-secondary">Loading cart...</Text>
+//     </View>
+//   );
+// }
 
 function ErrorUI() {
   return (
