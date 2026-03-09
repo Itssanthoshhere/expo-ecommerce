@@ -23,13 +23,10 @@ import * as Sentry from "@sentry/react-native";
 const CartScreen = () => {
   const api = useApi();
   const {
-    addToCart,
-    isAddingToCart,
     cart,
     cartItemCount,
     cartTotal,
     clearCart,
-    isClearing,
     isError,
     isLoading,
     isRemoving,
@@ -295,9 +292,7 @@ const CartScreen = () => {
         />
       </ScrollView>
 
-      <View
-        className="absolute bottom-0 left-0 right-0 px-6 pt-4 pb-32 border-t bg-background/95 backdrop-blur-xl border-surface"
-      >
+      <View className="absolute bottom-0 left-0 right-0 px-6 pt-4 pb-32 border-t bg-background/95 backdrop-blur-xl border-surface">
         {/* Quick Stats */}
         <View className="flex-row items-center justify-between mb-4">
           <View className="flex-row items-center">
