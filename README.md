@@ -2,7 +2,7 @@
 <div align="center">
 
 <!-- Project Banner -->
-<img src="admin/public/screenshot-for-readme.png" alt="Project Banner" />
+<!-- <img src="admin/public/screenshot-for-readme.png" alt="Project Banner" /> -->
 
 <!-- Mobile Stack -->
 <div>
